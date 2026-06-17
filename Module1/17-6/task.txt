@@ -1,0 +1,14 @@
+Assignment - session1 from career Center
+
+
+
+Create Folder with YourName
+Create SubFolder with the name of java
+Create SubFolder with the name of project
+Create file inside project hello.txt
+Write Your Name
+Write Your Surname
+Write Your birthdate
+Write Your City
+Write Your Pincode
+

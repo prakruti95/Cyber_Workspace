@@ -1,0 +1,170 @@
+5. GPU (Graphics Processing Unit) 
+
+What is a GPU?
+
+GPU is responsible for processing graphics and displaying images on the monitor.
+
+Uses:
+
+* Gaming
+* Video Editing
+* 3D Modeling
+* Artificial Intelligence
+* Machine Learning
+
+Types of GPU:
+
+Integrated GPU
+
+Built inside the CPU.
+
+Example:
+
+Intel UHD Graphics
+
+Dedicated GPU
+
+Separate graphics card.
+
+Examples:
+
+* NVIDIA GeForce
+* AMD Radeon
+
+Analogy
+
+CPU = General Manager
+
+GPU = Graphics Specialist
+
+---
+
+6. Storage Devices 
+
+Storage devices save data permanently.
+
+HDD (Hard Disk Drive)
+
+Features:
+
+* Uses spinning magnetic disks.
+* Larger storage capacity.
+* Lower cost.
+
+Advantages:
+
+* Affordable
+* High capacity
+
+Disadvantages:
+
+* Slower speed
+* Mechanical parts can wear out
+
+---
+
+## SSD (Solid State Drive)
+
+Features:
+
+* No moving parts.
+* Uses flash memory.
+* Faster performance.
+
+Advantages:
+
+* Fast boot time
+* Faster file access
+* Durable
+
+Disadvantages:
+
+* More expensive than HDD
+
+---
+
+## HDD vs SSD
+
+| Feature      | HDD     | SSD            |
+| ------------ | ------- | -------------- |
+| Speed        | Slow    | Fast           |
+| Moving Parts | Yes     | No             |
+| Durability   | Lower   | Higher         |
+| Cost         | Cheaper | More Expensive |
+| Boot Time    | Longer  | Shorter        |
+
+---
+
+# How All Components Work Together 
+
+Example: Opening Microsoft Word
+
+1. User clicks Word icon.
+2. SSD/HDD sends program data.
+3. RAM temporarily stores active data.
+4. CPU processes instructions.
+5. GPU displays the application.
+6. Motherboard connects everything.
+
+### Flow
+
+Storage → RAM → CPU → GPU → Monitor
+
+---
+
+Summary
+
+Today we learned:
+
+✓ Hardware 
+
+✓ Motherboard – Connects all components
+
+✓ CPU – Brain of the computer
+
+✓ RAM – Temporary working memory
+
+✓ GPU – Handles graphics processing
+
+✓ HDD – Traditional storage
+
+✓ SSD – Fast modern storage
+
+---
+
+# Assignment
+
+### Draw a Basic PC Hardware Diagram
+
+* Motherboard
+* CPU
+* RAM
+* GPU
+* SSD/HDD
+* Power Supply
+* Monitor
+* Keyboard
+* Mouse
+
+Sample Layout
+
+
+           MONITOR
+              |
+              |
+        +-----------+
+        |    GPU    |
+        +-----------+
+              |
+    +-------------------+
+    |   MOTHERBOARD     |
+    |                   |
+    |  CPU      RAM     |
+    |                   |
+    +-------------------+
+              |
+       +-------------+
+       | SSD / HDD   |
+       +-------------+
+
+     Keyboard    Mouse
