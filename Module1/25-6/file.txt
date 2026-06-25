@@ -1,0 +1,13 @@
+7. Hidden Windows Repair Commands
+
+CMD (Admin):
+
+sfc /scannow
+
+9. Installed Windows Date
+
+CMD:
+
+systeminfo | find "Original Install Date"
+
+github desktop software
