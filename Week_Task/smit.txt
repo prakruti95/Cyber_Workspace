@@ -1,0 +1,11 @@
+Create a folder named Project on Desktop.
+Create a subfolder named Docs inside Project.
+Create a file named notes.txt inside Docs.
+Write the text "Hello Students" into notes.txt using CMD.
+Display the contents of notes.txt.
+Display all installed printers.
+Display connected USB devices.
+Display CPU information.
+Display RAM information.
+Display saved Wi-Fi profiles.and find anyone wifi password using command
+generate battery report

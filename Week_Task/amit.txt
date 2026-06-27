@@ -1,0 +1,2 @@
+Format System-create bootable Pendrive
+Check SMPS is working properly or not and give me steps for Activate Window (Take a video)

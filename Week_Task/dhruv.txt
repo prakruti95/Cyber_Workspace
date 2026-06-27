@@ -1,0 +1,1 @@
+Disassemble PC and take a photo of every component also mention what is the use of each component

@@ -1,0 +1,9 @@
+Check SMPS is working properly or not and give me steps for Activate Window 
+Open Device Manager using only a Run command.
+Open Control Panel using only a Run command.
+Open Disk Management using only a Run command.
+Display the currently logged-in user using CMD.
+Display the IP Address of the system.
+Clear the CMD screen.
+Display saved Wi-Fi profiles.and find anyone wifi password using command
+generate battery report
