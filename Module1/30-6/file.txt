@@ -1,0 +1,16 @@
+===================================================================
+1. CREATE FILE: AND DENY PERMISSION
+
+C:\Users\Admin>icacls "C:\Users\Admin\hello.txt" /deny %USERNAME%:(W,D)
+processed file: C:\Users\Admin\hello.txt
+Successfully processed 1 files; Failed processing 0 files
+
+2. REMOVE DENY PERMISSION
+
+C:\Users\Admin>icacls "C:\Users\Admin\hello.txt" /remove:d %USERNAME%
+processed file: C:\Users\Admin\hello.txt
+Successfully processed 1 files; Failed processing 0 files
+========================================================================
+md con\
+rd /s /q \\?\C:\Users\Admin\Desktop\con
+rd /s /q "\\?\C:\Users\Admin\con"
