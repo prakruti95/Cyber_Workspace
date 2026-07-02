@@ -1,0 +1,4 @@
+@echo off
+msg * Virus Detected!
+msg * System Scan Started!
+msg * Just Kidding :)
