@@ -161,6 +161,7 @@ This command shows the current user account.
 Type:
 
 systeminfo
+CPUID-CPUZ
 
 This command displays detailed system information.
 
