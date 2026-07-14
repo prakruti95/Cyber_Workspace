@@ -1,0 +1,5 @@
+1. Command Prompt (Administrator)
+ipconfig /release
+ipconfig /renew
+
+2. Wi-Fi disconnect → connect
