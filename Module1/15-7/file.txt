@@ -1,0 +1,9 @@
+connect with same internet
+right click on folder -> share people [IP or everyone]
+connect with another laptop in cmd enter \\IP
+enter credentials
+you can access details
+
+permissions:
+read/write
+read 
