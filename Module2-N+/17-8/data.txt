@@ -1,0 +1,235 @@
+Module 1.2 – Day 2: TCP/IP Suite
+________________________________________
+THEORY 
+Introduction to TCP/IP
+What is TCP/IP?
+TCP/IP (Transmission Control Protocol / Internet Protocol) is the standard communication protocol used on the Internet and almost every modern computer network.
+Whenever you:
+•	Open a website
+•	Send an email
+•	Watch YouTube
+•	Use WhatsApp
+•	Play online games
+Your device communicates using the TCP/IP protocol suite.
+Simple Definition
+TCP/IP is a collection of networking protocols that allows devices to communicate over a network and the Internet.
+________________________________________
+Why is TCP/IP Important?
+TCP/IP is the backbone of the Internet.
+It provides:
+•	Reliable communication
+•	Device identification using IP addresses
+•	Data routing
+•	Error checking
+•	Data delivery
+•	Internet connectivity
+Without TCP/IP, the Internet would not function.
+________________________________________
+History of TCP/IP
+•	Developed by the U.S. Department of Defense (DARPA)
+•	Designed in the 1970s
+•	Official Internet standard since 1983
+•	Used worldwide today
+________________________________________
+What is a Protocol?
+A protocol is a set of rules that devices follow to communicate with each other.
+Real-Life Example
+Imagine sending a courier.
+You need:
+•	Sender address
+•	Receiver address
+•	Packaging
+•	Delivery rules
+Similarly, computers follow protocols to exchange data correctly.
+________________________________________
+TCP/IP Architecture
+The TCP/IP model consists of 4 Layers.
+Application Layer
+↓
+
+Transport Layer
+↓
+
+Internet Layer
+↓
+
+Network Access Layer
+Unlike the OSI Model (7 layers), TCP/IP combines some functions into four layers.
+________________________________________
+Layer 4 – Application Layer
+Purpose
+Provides network services directly to user applications.
+This is where users interact with the network.
+Functions
+•	Web browsing
+•	Email
+•	File transfer
+•	Remote login
+•	Domain name resolution
+Common Protocols
+•	HTTP
+•	HTTPS
+•	FTP
+•	SMTP
+•	POP3
+•	IMAP
+•	DNS
+•	DHCP
+•	SSH
+Examples
+•	Google Chrome
+•	Mozilla Firefox
+•	Microsoft Outlook
+•	WhatsApp
+•	Zoom
+________________________________________
+Layer 3 – Transport Layer
+Purpose
+Provides end-to-end communication between devices.
+Responsibilities
+•	Segmentation
+•	Error detection
+•	Flow control
+•	Reliable delivery
+•	Port addressing
+Main Protocols
+TCP (Transmission Control Protocol)
+Features
+•	Reliable
+•	Connection-oriented
+•	Error checking
+•	Packet ordering
+•	Retransmission
+Examples
+•	Web browsing (HTTPS)
+•	Email
+•	Online banking
+•	File download
+________________________________________
+UDP (User Datagram Protocol)
+Features
+•	Faster
+•	No acknowledgment
+•	No retransmission
+•	Connectionless
+Examples
+•	Online gaming
+•	Video streaming
+•	Voice calls
+•	DNS queries
+________________________________________
+TCP vs UDP
+TCP	UDP
+Reliable	Fast
+Connection-Oriented	Connectionless
+Error Recovery	No Error Recovery
+Ordered Delivery	No Order Guarantee
+Slower	Faster
+________________________________________
+Layer 2 – Internet Layer
+Purpose
+Moves packets between different networks.
+Responsibilities
+•	Logical addressing
+•	Routing
+•	Packet forwarding
+•	Path selection
+Main Protocols
+•	IP
+•	ICMP
+•	ARP
+•	IGMP
+Example
+A packet travels from Rajkot to New York through multiple routers.
+________________________________________
+IP Address
+Every device connected to a network has an IP address.
+Example
+192.168.1.25
+An IP address identifies a device on a network.
+________________________________________
+ICMP
+Internet Control Message Protocol
+Used for:
+•	Ping
+•	Error reporting
+•	Diagnostics
+Example
+ping google.com
+Uses ICMP packets.
+________________________________________
+ARP
+Address Resolution Protocol
+Purpose
+Finds the MAC Address of a device using its IP Address.
+Example
+arp -a
+Displays the ARP table.
+________________________________________
+Layer 1 – Network Access Layer
+Also called:
+•	Link Layer
+•	Network Interface Layer
+Purpose
+Moves data over the physical network.
+Responsibilities
+•	MAC Address
+•	Frames
+•	Cables
+•	Switches
+•	Ethernet
+•	Wi-Fi
+Technologies
+•	Ethernet
+•	Wi-Fi
+•	Fiber
+•	DSL
+Devices
+•	Switch
+•	Hub
+•	Network Card (NIC)
+________________________________________
+Data Encapsulation in TCP/IP
+When sending data:
+Application Data
+↓
+TCP Segment
+↓
+IP Packet
+↓
+Ethernet Frame
+↓
+Bits
+Receiving data follows the reverse process (decapsulation).
+________________________________________
+How TCP/IP Works (Real Example)
+You open:
+https://www.youtube.com
+Step 1
+Browser creates request.
+(Application Layer)
+↓
+Step 2
+TCP breaks data into segments.
+(Transport Layer)
+↓
+Step 3
+IP adds source and destination IP addresses.
+(Internet Layer)
+↓
+Step 4
+Ethernet adds MAC addresses.
+(Network Access Layer)
+↓
+Step 5
+Bits travel through Wi-Fi.
+________________________________________
+Difference Between OSI and TCP/IP
+OSI Model	TCP/IP Model
+7 Layers	4 Layers
+Reference Model	Practical Internet Model
+Developed by ISO	Developed by DARPA
+Mainly for learning	Used in real networks
+Layer 5, 6, and 7 are separate	Combined into Application 
+Data Link and Physical are separate	Combined into Network Access Layer
+________________________________________
