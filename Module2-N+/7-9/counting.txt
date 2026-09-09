@@ -1,0 +1,51 @@
+For **192.168.1.10/25**:
+
+### Step 1: Block Size
+
+`/25` → Subnet Mask = **255.255.255.128**
+
+```text
+Block Size = 256 − 128
+           = 128
+```
+
+### Step 2: Range Selection
+
+Last octet = **10**
+
+Ranges:
+
+```text
+0   → 127
+128 → 255
+```
+
+Since:
+
+```text
+0 ≤ 10 ≤ 127
+```
+
+So **10 belongs to the `0–127` range**.
+
+### Step 3: Final Calculation
+
+```text
+Network ID   = 192.168.1.0
+Broadcast ID = 192.168.1.127
+
+First Usable = 192.168.1.1
+Last Usable  = 192.168.1.126
+
+Total Usable Hosts = 128 − 2 = 126
+```
+
+| Detail                 | Answer          |
+| ---------------------- | --------------- |
+| **Network ID**         | `192.168.1.0`   |
+| **Broadcast ID**       | `192.168.1.127` |
+| **First Usable IP**    | `192.168.1.1`   |
+| **Last Usable IP**     | `192.168.1.126` |
+| **Total Usable Hosts** | **126**         |
+
+**Shortcut:** `10` → falls between **0–127** → Network = **0**, Broadcast = **127**.
