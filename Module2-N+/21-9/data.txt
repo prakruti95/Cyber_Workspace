@@ -1,0 +1,271 @@
+IPv6 and Networking Practical Concepts
+1. What is IPv6?
+IPv6 is the newer version of IP addressing.
+IPv4 uses a 32-bit address.
+IPv6 uses a 128-bit address.
+Example IPv4:
+192.168.1.10
+Example IPv6:
+2001:db8::10
+Real-Life Example
+Think about an IP address like a house address.
+If you want to send a parcel to a house, you need the correct address.
+In the same way, when one computer wants to communicate with another computer, it needs an IP address.
+________________________________________
+2. IPv6 Address Format
+An IPv6 address has 8 groups.
+Example:
+2001:0db8:0000:0000:0000:0000:0000:0010
+The groups are separated by :.
+Each group can contain up to 4 hexadecimal digits.
+Example:
+2001 : 0db8 : 0000 : 0000 : 0000 : 0000 : 0000 : 0010
+So, there are 8 groups.
+________________________________________
+3. IPv6 Uses Hexadecimal
+IPv6 uses hexadecimal numbers.
+Hexadecimal values are:
+0 1 2 3 4 5 6 7 8 9 A B C D E F
+Example:
+2001:db8:abcd::10
+Here:
+•	2001 is hexadecimal.
+•	db8 is hexadecimal.
+•	abcd is hexadecimal.
+•	10 is hexadecimal.
+For beginners, students do not need to perform hexadecimal calculations.
+They only need to understand the IPv6 address format.
+________________________________________
+4. IPv6 Prefix
+IPv6 uses a prefix length such as /64.
+Example:
+2001:db8:1234:5678::10/64
+/64 means the first 64 bits are the network part.
+The remaining 64 bits are used for the device/interface part.
+Example:
+Network Prefix:
+2001:db8:1234:5678::/64
+Device/Interface:
+::10
+Real-Life Example
+Suppose a company has this IPv6 network:
+2001:db8:1234:5678::/64
+Different computers can have addresses like:
+PC-1 → 2001:db8:1234:5678::10
+
+PC-2 → 2001:db8:1234:5678::20
+
+PC-3 → 2001:db8:1234:5678::30
+All these computers use the same network prefix.
+________________________________________
+5. IPv6 Address Simplification
+IPv6 addresses can be very long.
+So, IPv6 provides rules to make them shorter and easier to read.
+There are two main rules.
+Rule 1 – Remove Leading Zeros
+You can remove zeros from the beginning of each group.
+Example:
+0db8 → db8
+
+0010 → 10
+Full address:
+2001:0db8:0000:0000:0000:0000:0000:0010
+After removing leading zeros:
+2001:db8:0:0:0:0:0:10
+________________________________________
+Rule 2 – Replace Continuous Zero Groups with ::
+If there are many continuous zero groups, they can be replaced with ::.
+Example:
+2001:db8:0:0:0:0:0:10
+becomes:
+2001:db8::10
+Important Rule
+:: can be used only once in an IPv6 address.
+Example
+Full address:
+2001:0db8:0000:0000:0000:0000:0000:0001
+Step 1 – Remove leading zeros:
+2001:db8:0:0:0:0:0:1
+Step 2 – Replace continuous zeros:
+2001:db8::1
+So:
+Full:
+2001:0db8:0000:0000:0000:0000:0000:0001
+Short:
+2001:db8::1
+________________________________________
+6. IPv6 Address Types
+There are three important IPv6 address types for students to understand:
+1.	Unicast
+2.	Multicast
+3.	Anycast
+________________________________________
+6.1 Unicast
+One device → One device
+Example:
+PC-A → PC-B
+It is used for normal one-to-one communication.
+Real-Life Example
+You open a website.
+Your computer communicates with a particular server.
+This is one-to-one communication.
+________________________________________
+6.2 Multicast
+One device → Multiple selected devices
+Example:
+             Device 1
+                ↑
+                |
+PC ─────────────┼──→ Device 2
+                |
+                ↓
+             Device 3
+IPv6 uses multicast instead of broadcast.
+Example multicast address:
+ff02::1
+Simple Meaning
+Multicast means:
+Send data to a selected group of devices.
+________________________________________
+6.3 Anycast
+One device → Nearest available device from a group
+Real-Life Example
+Suppose a company has the same service on servers in:
+•	Mumbai
+•	Delhi
+•	Ahmedabad
+A user can be connected to a suitable nearby server.
+For beginners, students only need to understand the basic idea of anycast.
+________________________________________
+7. IPv6 Link-Local Address
+IPv6 devices can automatically get a link-local address.
+Link-local addresses start with:
+fe80::
+Example:
+fe80::1234:5678:abcd:1111
+Link-local addresses are used for communication on the local network.
+Real-Life Example
+Suppose two computers are connected to the same local network.
+They can use their link-local IPv6 addresses to communicate with each other locally.
+Link-local addresses are not used to communicate with another network through a router.
+________________________________________
+8. Check IPv6 Address on Windows
+Open Command Prompt.
+Run:
+ipconfig
+You may see:
+IPv6 Address
+and:
+Link-local IPv6 Address
+Student Practical
+Ask students to find:
+•	IPv4 address
+•	IPv6 address
+•	Link-local IPv6 address
+This makes the theory practical.
+________________________________________
+9. Check IPv6 Address on Linux
+Run:
+ip addr
+Look for:
+inet6
+Example:
+inet6 fe80::1234/64
+This shows that the computer has an IPv6 address.
+________________________________________
+10. Static IPv6 Address
+Like IPv4, we can manually configure an IPv6 address.
+PC-A
+IPv6 Address:
+2001:db8:1::10
+Prefix:
+64
+PC-B
+IPv6 Address:
+2001:db8:1::20
+Prefix:
+64
+Both computers belong to:
+2001:db8:1::/64
+So, they can communicate directly if the network and firewall settings allow it.
+________________________________________
+11. IPv6 Default Gateway
+A default gateway is normally a router.
+Example:
+PC-A
+2001:db8:1::10
+       |
+       ↓
+Router
+2001:db8:1::1
+       |
+       ↓
+Internet / Other Network
+PC-A uses:
+2001:db8:1::1
+as its default gateway.
+Real-Life Example
+Suppose your computer wants to communicate with a server in another network.
+Your computer cannot directly reach that network.
+So, it sends the packet to the router.
+The router forwards the packet to the correct network.
+________________________________________
+12. IPv6 Ping
+Ping is used to test network connectivity.
+For IPv4:
+ping 192.168.1.20
+For IPv6:
+ping -6 2001:db8:1::20
+You can also try:
+ping -6 google.com
+What Does Ping Do?
+Ping checks:
+"Can my computer reach this destination using IPv6?"
+If you receive replies, IPv6 connectivity is working.
+________________________________________
+13. IPv4 Ping vs IPv6 Ping
+IPv4
+ping 192.168.1.20
+IPv6
+ping -6 2001:db8:1::20
+The purpose is the same:
+Check network connectivity.
+The main difference is which IP version is being used.
+________________________________________
+14. IPv6 Routing Table
+A routing table tells the computer:
+"Where should I send this packet?"
+On Windows:
+route print -6
+On Linux:
+ip -6 route
+Real-Life Example
+PC
+ |
+ | Destination is another network
+ ↓
+Router
+ |
+ ↓
+Destination
+The routing table helps the computer decide where to send the packet.
+________________________________________
+15. IPv6 Does Not Use Broadcast
+This is an important point.
+IPv4 has broadcast.
+IPv6 does not have broadcast.
+IPv6 uses multicast instead.
+Simple Difference
+IPv4:
+One device
+     |
+     ↓
+All devices
+IPv6:
+One device
+     |
+     ↓
+Selected group of devices
+Remember:
+IPv4 → Broadcast exists
+IPv6 → No Broadcast; Multicast is used
